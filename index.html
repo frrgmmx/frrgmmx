@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendita Isabella - Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bienvenidos a Tiendita Isabella</h1>
+            <nav>
+                <div class="menu-toggle">
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    
+                    <ul class="menu">
+                        <li><a href="#productos-mas-vendidos">Productos Más Vendidos</a></li>
+                        <li><a href="#seccion-comida">Comida</a></li>
+                        <li><a href="#seccion-limpieza">Limpieza</a></li>
+                        <li><a href="#seccion-hogar">Productos para el Hogar</a></li>
+                        <!-- Puedes agregar más secciones aquí -->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="productos-mas-vendidos">
+            <h2>Productos Más Vendidos</h2>
+            <div class="products-grid">
+                <div class="product">
+                    <a href="payboli.html">
+                        <img src="payboli.png" alt="Boli de Pay de Limón">
+                        <h3>Boli de Pay de Limón</h3>
+                        <p>Precio: $15.00</p>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="oreoboli.html">
+                        <img src="oreoboli.png" alt="Boli de Oreo">
+                        <h3>Boli de Oreo</h3>
+                        <p>Precio: $15.00</p>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="mazapanboli.html">
+                        <img src="mazapanboli.png" alt="Boli de Mazapán">
+                        <h3>Boli de Mazapán</h3>
+                        <p>Precio: $15.00</p>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="barcel.html">
+                        <img src="barcel.png" alt="Papas Barcel">
+                        <h3>Papas Barcel</h3>
+                        <p>Precio: $15.00</p>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="titan.html">
+                        <img src="titan.png" alt="Refresco Titán">
+                        <h3>Refresco Titán</h3>
+                        <p>Precio: $14.00</p>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="botellaagua.html">
+                        <img src="botellaagua.png" alt="Botella de Agua 2L">
+                        <h3>Botella de Agua 2L</h3>
+                        <p>Precio: $14.00</p>
+                    </a>
+                </div>
+                <!-- Más productos aquí -->
+            </div>
+        </section>
+        
+        <section id="seccion-comida">
+            <h2>Comida</h2>
+            <!-- Aquí irán los productos de la sección de comida -->
+        </section>
+
+        <section id="seccion-limpieza">
+            <h2>Limpieza</h2>
+            <!-- Aquí irán los productos de la sección de limpieza -->
+        </section>
+
+        <section id="seccion-hogar">
+            <h2>Productos para el Hogar</h2>
+            <!-- Aquí irán los productos de la sección de productos para el hogar -->
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Tiendita Isabella. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // JavaScript para menú desplegable
+        document.querySelector('.menu-toggle input').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
